@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Advice generator app</title>
+</head>
+<body>
+
+  <main class="bg-dark-blue grid min-h-screen place-content-center font-manrope">
+
+    <section class="w-[90%] bg-dark-grayish-blue rounded-md max-w-xl mx-auto py-10">
+
+      <div class="absolute inset-0 flex justify-center items-center -mt-16">
+        <img src="images/spinner.svg" alt="" class="size-16 spinner hidden">
+      </div>
+      
+
+      <article class="article text-center space-y-5">
+
+        <h1 class="title font-semibold uppercase text-xs text-neon-green tracking-[.25em]">ADVICE #117</h1>
+
+      <p class="paragraph text-light-cyan text-2xl w-[90%] mx-auto">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>      
+
+      </article>
+
+      <picture class="flex justify-center w-[90%] mx-auto">
+
+        <source media="(min-width: 768px)" srcset="images/pattern-divider-desktop.svg">
+ 
+         <img src="images/pattern-divider-mobile.svg" alt="pattern divider" class="py-5">
+ 
+       </picture>
+       
+ 
+       <button class="generate__button group relative w-full flex justify-center">
+ 
+         <figure class="bg-neon-green size-16 rounded-full grid place-content-center absolute mt-2">
+           
+           <span class="absolute inset-0 bg-neon-green rounded-full blur-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100"></span>
+           
+           <img src="images/icon-dice.svg" alt="Generate advice" class="relative z-10">
+ 
+         </figure>
+
+       </button>
+
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
